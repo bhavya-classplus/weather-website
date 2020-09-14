@@ -1,5 +1,4 @@
-//Add script at the end of the body in index.hbs
-console.log('Client side js file is loaded')
+//Add <script> at the end of the body in index.hbs
 
 const weatherForm=document.querySelector('form') //Now what comes back from here is a javascript representation of the element that can be used to manipulate it.
 const search=document.querySelector('input')
