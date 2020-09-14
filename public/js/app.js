@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit',(e)=>{ //e is the event object.
     //Just before fetch, render loading message and empty p.
     messageOne.textContent='Loading...'
     messageTwo.textContent='' //to empty if something is present in the paragraph.
-    fetch('http://localhost:3000/weather/?address='+location).then((response)=>{
+    fetch('/weather/?address='+location).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
             // console.log(data.error)
